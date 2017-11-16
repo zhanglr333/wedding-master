@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>老婆，嫁给我好吗</title>
+    <style>
+
+        body{
+            width:100%;
+            margin:0;
+            padding: 0;
+        }
+        .w-t{
+            margin:100px auto;
+            width:500px;
+        }
+        .w-t .w-font{
+            position:absolute;
+            left:35%;
+            font-size: 26px;
+            letter-spacing: 5px;
+            color:#e4393c;
+            font-weight: bold;
+        }
+        .w-font-w{
+            margin-left:100px;
+            opacity:0;
+            animation:font-woman .5s ease-out 2.5s;
+            animation-fill-mode: forwards;
+            -webkit-animation:font-woman .5s ease-out 2.5s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        @keyframes font-woman {
+            from{
+                transform: scale(0);
+            }
+            to{
+                opacity:1;
+                transform: scale(1);
+            }
+        }
+        @-webkit-keyframes font-woman {
+            from{
+                transform: scale(0);
+            }
+            to{
+                opacity:1;
+                transform: scale(1);
+            }
+        }
+
+        .w-t .w-font-m span{
+            opacity:0;
+        }
+        @keyframes font {
+            from{
+                transform: scale(0);
+            }
+            to{
+                opacity:1;
+                transform: scale(1);
+            }
+        }
+        @-webkit-keyframes font {
+            from{
+                transform: scale(0);
+            }
+            to{
+                opacity:1;
+                transform: scale(1);
+            }
+        }
+
+        .w-t .boom1{
+            opacity:0;
+            animation: boom 2s linear 2.2s infinite;
+            -webkit-animation: boom 2s linear 2.2s infinite;
+        }
+        .w-t .boom2{
+            opacity:0;
+            position: absolute;
+            left:500px;
+            margin-top: 40px;
+            animation: boom 2s linear 2.35s infinite;
+            -webkit-animation: boom 2s linear 2.35s infinite;
+        }
+        .w-t .boom3{
+            opacity:0;
+            position: absolute;
+            left:650px;
+            animation: boom 2s linear 2.5s infinite;
+            -webkit-animation:boom 2s linear 2.5s infinite;
+        }
+        @keyframes boom {
+            from{
+                opacity:0;
+                transform: scale(0);
+            }
+            to{
+                opacity:1;
+                transform: scale(1.5);
+            }
+        }
+        @-webkit-keyframes boom {
+            from{
+                opacity:0;
+                transform: scale(0);
+            }
+            to{
+                opacity:1;
+                transform: scale(1.5);
+            }
+        }
+        .w-r{
+            margin:-50px auto;
+            width: 1000px;
+            overflow: hidden;
+        }
+        .w-r .w-m{
+            float:left;
+            margin-top: 59px;
+            animation:man 1.5s ease-out;
+            animation-fill-mode: forwards;
+            -webkit-animation:man 1.5s ease-out;
+            -webkit-animation-fill-mode: forwards;
+        }
+        @keyframes man {
+            from{
+               margin-left:0;
+                opacity:0;
+            }
+            to{
+                margin-left:350px;
+                opacity:1;
+            }
+        }
+        @-webkit-keyframes man {
+            from{
+                margin-left:0;
+                opacity:0;
+            }
+            to{
+                margin-left:350px;
+                opacity:1;
+            }
+        }
+        .w-r .w-wm{
+            float:right;
+            margin-right: 350px;
+            animation: woman 0.5s;
+            -webkit-animation: woman 0.5s ;
+        }
+        @keyframes woman {
+            from{
+                opacity:0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+        @-webkit-keyframes woman {
+            from{
+                opacity:0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+        .w-r .w-fh{
+            position:absolute;
+            margin-left:450px;
+            margin-top:64px;
+            opacity:0;
+            animation: fh 0.3s ease 1.5s;
+            animation-fill-mode: forwards;
+            -webkit-animation: fh 0.3s ease 1.5s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        @keyframes fh {
+            from{
+                opacity:0;
+                transform: scale(0);
+            /*缩放至看不见*/
+            }
+            to{
+                opacity:1;
+                transform: scale(1);
+            }
+        }
+        @-webkit-keyframes fh {
+            from{
+                opacity:0;
+                transform: scale(0);
+                /*缩放至看不见*/
+            }
+            to{
+                opacity:1;
+                transform: scale(1);
+            }
+        }
+        .w-r .w-fh img {
+            width:60px;
+        }
+        .w-r:after{
+            clear:both;
+            content:'.';
+            display:block;
+            height:0;
+            visibility:hidden;
+            overflow:hidden;
+        }
+        .w-f{
+            width: 820px;
+            margin: 0 auto;
+        }
+        .w-f img{
+            height:120px;
+        }
+        .w-f .w-f-one{
+            opacity:0;
+            animation: flowers 1s ease-out 2.5s;
+            animation-fill-mode: forwards;
+            -webkit-animation: flowers 1s ease-out 2.5s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        .w-f .w-f-two{
+            margin-left: 50px;
+            margin-top: -120px;
+            opacity:0;
+            animation: flowers 1.5s ease-out 3s;
+            animation-fill-mode: forwards;
+            -webkit-animation: flowers 1.5s ease-out 3s;
+            -webkit-animation-fill-mode: forwards;
+        }
+        @keyframes flowers {
+            from{
+                top:100px;
+            }
+            to{
+                opacity:1;
+                top:0;
+            }
+        }
+        @-webkit-keyframes flowers {
+            from{
+                top:100px;
+            }
+            to{
+                opacity:1;
+                top:0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="w-t">
+    <div class="w-font w-font-m" id="w-font-m">
+        <span>老</span>
+        <span>婆</span>
+        <span>愿</span>
+        <span>意</span>
+        <span>嫁</span>
+        <span>给</span>
+        <span>我</span>
+        <span>吗</span>
+    </div>
+    <div class="w-font w-font-w">
+        老公我愿意
+    </div>
+    <img src="png/boom.png" alt="" class="boom1">
+    <img src="png/boom.png" alt="" class="boom2">
+    <img src="png/boom.png" alt="" class="boom3">
+</div>
+<div class="w-r">
+    <div class="w-m">
+        <img src="png/man.png" alt="">
+    </div>
+    <div class="w-fh">
+        <img src="png/flower.png" alt="">
+    </div>
+    <div class="w-wm">
+        <img src="png/woman.png" alt="">
+    </div>
+</div>
+<div class="w-f">
+    <div class="w-f-one">
+        <img src="png/flowers1.png" alt="">
+        <img src="png/flowers2.png" alt="">
+        <img src="png/flowers1.png" alt="">
+        <img src="png/flowers2.png" alt="">
+        <img src="png/flowers1.png" alt="">
+        <img src="png/flowers2.png" alt="">
+    </div>
+    <div class="w-f-two">
+        <img src="png/flowers1.png" alt="">
+        <img src="png/flowers2.png" alt="">
+        <img src="png/flowers1.png" alt="">
+        <img src="png/flowers2.png" alt="">
+        <img src="png/flowers1.png" alt="">
+
+    </div>
+</div>
+<script>
+        var span = document.querySelectorAll('#w-font-m span');
+        console.log(span);
+        for(var i = 0; i < span.length; i++){
+            span[i].style.WebkitAnimation = span[i].style.animation = "2s "+(i*150)+"ms font  linear alternate";
+         //   span[i].style.WebkitAnimationFillMode = span[i].style.animationFillMode = "forwards";
+//            span[i].style.WebkitAnimationDelay = span[i].style.animationDelay = "1.5s";不能加延迟
+
+        }
+</script>
+</body>
+</html>
